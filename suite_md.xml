@@ -1,0 +1,30 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Master Distributor" parallel="false" verbose="1">
+
+	<test name="One">
+		<classes>
+			<class name="master_distributor.Transfer" />
+		</classes>
+	</test>
+
+	<test name="Two">
+		<classes>
+			<class name="master_distributor.Activities" />
+		</classes>
+	</test>
+
+	<!-- <test name="Four"> <classes> <class name="master_distributor.MyProfile"/> 
+		</classes> </test> -->
+
+	<test name="Five">
+		<classes>
+			<class name="pay1_distributor.Reports" />
+		</classes>
+	</test>
+
+	<listeners>
+		<listener class-name="lib.RetryListener" />
+	</listeners>
+
+</suite>

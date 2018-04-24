@@ -1,0 +1,46 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Distributor" parallel="false" verbose="1">
+
+	<test name="One">
+		<classes>
+			<class name="pay1_distributor.Transfer" />
+		</classes>
+	</test>
+
+	<test name="Two">
+		<classes>
+			<class name="pay1_distributor.Activities" />
+		</classes>
+	</test>
+
+	<test name="Three">
+		<classes>
+			<class name="pay1_distributor.SalesmanTransfer" />
+		</classes>
+	</test>
+
+	<test name="Four">
+		<classes>
+			<class name="pay1_distributor.MyProfile" />
+		</classes>
+	</test>
+
+	<test name="Five">
+		<classes>
+			<class name="pay1_distributor.Reports" />
+		</classes>
+	</test>
+
+	<test name="Six">
+		<classes>
+			<class name="pay1_distributor.Support" />
+		</classes>
+	</test>
+
+	<listeners>
+		<listener class-name="lib.RetryListener" />
+		<!-- <listener class-name="lib.JyperionListener"/> -->
+	</listeners>
+
+</suite>
